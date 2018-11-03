@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+  	  	
+  	<bean id="bk1" class="master.Book">
+  		<property name="bid" value="1"></property>
+  		<property name="bname" value="Core Java"></property>
+  		<property name="bprice" value="580.00"></property>
+  	</bean>
+  	
+  	<bean id="ctg" class="master.Category" autowire="byType">
+		<property name="catg" value="Java"></property>
+  		
+  	</bean>
+</beans>

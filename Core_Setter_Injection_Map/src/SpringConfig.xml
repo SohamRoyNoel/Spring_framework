@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+  <bean id="prd" class="master.rup.Product">
+  <property name="productdetails">
+      <map>
+      <entry key="TV">
+      <value>15000.00</value>
+      </entry>
+       <entry key="REFERIGENERATOR">
+      <value>18000.00</value>
+      </entry>
+       <entry key="TAB">
+      <value>20000.00</value>
+      </entry>
+       <entry key="LAPTOP">
+      <value>35000.00</value>
+      </entry>
+      </map>
+  </property>
+  </bean>
+</beans>

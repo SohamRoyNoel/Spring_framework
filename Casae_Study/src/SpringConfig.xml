@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+  <bean id="case" class="master.rup.case1">
+  	<property name = "rollno" value="1"></property>
+  	<property name = "name" value="Soham"></property>
+  	
+  	<property name="phone">
+  		<set>
+  			<value>98312244</value>
+  			<value>98306694</value>
+  			<value>98201255</value>
+  		</set>
+  	</property>
+  	
+  	<property name="fees">
+  		<map>
+  			<entry key="sem1">
+  				<value>25000</value>
+  			</entry>
+  			<entry key="sem2">
+  				<value>30000</value>
+  			</entry>
+  			<entry key="sem3">
+  				<value>36000</value>
+  			</entry>
+  		</map>
+  	</property>
+  	
+  	<property name="interest">
+  		<props>
+  			<prop key="football">CR7</prop>
+  			<prop key="cricket">Sachin</prop>
+  		</props>
+  	</property>
+  	
+  	<property name="visit">
+  		<list>
+  			<value>Pelling</value>
+  			<value>Gangtok</value>
+  			<value>Pelling</value>
+  		</list>
+  	</property>
+  </bean>
+</beans>
